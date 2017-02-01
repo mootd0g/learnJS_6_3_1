@@ -22,6 +22,9 @@ function Calculator() {
 		var secondOperand = +operationAsArray[2];
 		var operator = operationAsArray[1];
 
+		if ( isNaN(firstOperand) || isNaN(secondOperand) )
+			return null;
+		
 		return this.operations[operator](firstOperand, secondOperand); 
 	};
 }
