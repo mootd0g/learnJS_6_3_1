@@ -23,7 +23,7 @@ function Calculator() {
 		var operator = operationAsArray[1];
 
 		return this.operations[operator](firstOperand, secondOperand); 
-	}
+	};
 }
 
 /*
